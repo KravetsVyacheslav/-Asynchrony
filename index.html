@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: green;
+      position: absolute;
+    }
+    #gameBox {
+      width: 100px;
+      height: 100px;
+      background-color: purple;
+      position: relative;
+      margin-top: 50px;
+    }
+    #task1 {
+        top: 60px;
+    }
+  </style>
+  <body>
+    <!--1  -->
+    <div id="task1"></div>
+    <!-- 4 -->
+    <label for="timeInput">Введіть час у секундах:</label>
+    <input type="number" id="timeInput" min="1" />
+    <button id="startTimer">Запустити таймер</button>
+    <div id="timeMessage"></div>
+    <!-- 3 -->
+    <div id="gameBox"></div>
+    <p>Очки: <span id="score">0</span></p>     <button id="startGameButton">Почати гру</button>
+    <!-- 2 -->
+    <div class="box" id="animatedBox"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
